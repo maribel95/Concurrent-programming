@@ -1,0 +1,92 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.16.0
+A -fPIC
+P ZX
+
+RN
+RV SIMPLE_BARRIERS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=2
+
+U corda%b		corda.adb		bc8acea3 NE OO PK IL
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+
+U corda%s		corda.ads		6672191e EE NE OO PK IL
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D corda.ads		20211113084820 6672191e corda%s
+D corda.adb		20211113084850 daf8d7bd corda%b
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D system.ads		20190518041255 085b6ffb system%s
+D s-atacco.ads		20190518041256 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-multip.ads		20190518041254 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20190518124528 e40aaf2d system.os_constants%s
+D s-osinte.ads		20190518041257 01b3ad47 system.os_interface%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stausa.ads		20190518041255 017a0a05 system.stack_usage%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20190518041256 801abd01 system.task_info%s
+D s-taspri.ads		20190518041256 f40ac08d system.task_primitives%s
+D s-taskin.ads		20190518041257 b9d612e2 system.tasking%s
+D s-taprob.ads		20190518041256 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20190518041257 60ad3dae system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20190518041257 5f548bb3 system.tasking.protected_objects.operations%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+G a e
+G c Z s b [babuisudlock corda__cordamonitor 4 13 none]
+G c Z s b [babuisudunlock corda__cordamonitor 5 17 none]
+G c Z s b [babuinordlock corda__cordamonitor 6 13 none]
+G c Z s b [babuinordunlock corda__cordamonitor 7 17 none]
+G c Z s b [cordamonitor__babuisudunlockN corda 5 7 none]
+G c Z s b [cordamonitor__babuisudunlockP corda 5 7 none]
+G c Z s b [cordamonitor__babuinordunlockN corda 7 7 none]
+G c Z s b [cordamonitor__babuinordunlockP corda 7 7 none]
+G c Z s s [cordamonitorVDI corda 3 4 none]
+G c Z s s [cordamonitorVDF corda 3 4 none]
+G c Z s s [cordamonitorVIP corda 3 4 none]
+X 7 corda.ads
+1K9*corda 13l5 13e10 8|1b14 27l5 27t10
+3W19*cordaMonitor 9E7 11l11 11e23 8|3b19 25l8 25t20
+4Y13 babuiSudLock 8|5b13 8l11 8t23
+5U17 babuiSudUnlock 8|10b17 13l11 13t25
+6Y13 babuiNordLock 8|15b13 18l11 18t24
+7U17 babuiNordUnlock 8|20b17 23l11 23t26
+9i7 babuinsSud{integer} 8|5r50 7r10 7r23 12r10 12r23 15r32
+10i7 babuinsNord{integer} 8|5r31 15r50 17r10 17r24 22r10 22r24
+X 22 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

@@ -141,6 +141,26 @@ A gorge is a hollow or narrow and not very long passage between two mountains, o
 
 <img width="378" alt="Captura de pantalla 2023-11-20 a las 11 19 34" src="https://github.com/maribel95/Concurrent-programming/assets/61268027/3189c0c7-3a36-4d9d-af2c-4bff319a60d1">
 
+The simulation has been programmed using the Ada language, using protected objects as synchronization tools.
+The northern and southern baboons have been programmed as concurrent tasks, they have been assigned an identifier that is sufficient to be a number and their origin (North or South). After the third round the tasks end.
+
+## P3: The bear and bees problem with Rabbitmq and the Go client.
+
+The simulation is that of the well-known problem described by Andrews (2000). There is a single bear who basically eats honey out of a jar and sleeps. There are N bees that carry 1 portion of honey and take it to the jar. There are H portions of honey in the jar. The bees take honey to the jar until it is full. When the jar is full, the last bee wakes up the bear. The bear eats the entire jar and while doing so the bees do not bother him. When he finishes eating he goes to sleep and the bees start all over again.
+In these cases we will define the size of the jar of 10 units, the number of bees indeterminate and for the issue of finishing, we will set that the bone will eat 3 jars of honey and then end up finishing off the bees as well.
+
+The simulation must be programmed using the Go language and using the Rabbitmq message server for communication between processes.
+Both the bear and each of the bees must be programmed as Go processes to be launched from the command line, in the case of the bees they will be identified by a string on the same command line as will be the name of the bee.
+There are different solutions to this problem, in this exercise it is explicitly asked not to implement the version with a Pot process that would act as a server between the bees and the bear, that is, the synchronization must be carried out by sending messages between bear and bees using Rabbitmq queues.
+This problem has been studied as an example of the producer/consumer case, where bee processes are producers and the bear is the only consumer. To carry out this exercise, it may be interesting to consider the solution where the bear is the producer of the permits that allow the bees to make honey and the bees as consumers of these permits. It is not mandatory to use this idea but it can simplify your code.
+To solve the termination it is important to do it in the most elegant way, that is to say, when the bear decides to end the simulation it must send the relevant messages to all the bees. As said, the number of bees is indeterminate and your code must be correct both for a simulation with 3 bees and for one with 300. That is why it is convenient to use the Fanout Exchange Routing provided by Rabbitmq.
+
+The processes will show a message when starting and one when the simulation ends, if the bees are launched first they will wait for the bear to arrive, on the other hand if the bear arrives first it will go to sleep until the jar is full up.
+When the bees are filling the jar by units they will print a message indicating what their portion of honey they have added is, the bees will execute a wait to simulate the process of making honey. The bee that puts the last portion of honey in the jar (portion 10) will print a message that wakes up the bear.
+For its part, the bear when it wakes up prints the name of the bee that woke it up, then it simulates the time it eats by emptying the jar, all this time the bees are blocked, finally the bear communicates that it is leaving he goes to sleep allowing the bees to fill the jar again. When this process is repeated 3 times, a message appears that the jar is broken by terminating the bee processes and clearing the queues before finishing.
+Clearing the queues is convenient while programming to not have messages in them from previous executions, in any case they can also be cleared with the interactive tool or with the Rabbitmq queue management commands.
+
+
 
 
 

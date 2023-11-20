@@ -134,7 +134,12 @@ A simulation example could be this:
 </pre>
 
 
-## P2: The problem of traveling baboons with protected objects
+## P2: The problem of traveling baboons with protected objects.
+
+A gorge is a hollow or narrow and not very long passage between two mountains, or a narrow valley between steep mountains. There is a gorge with a rope crossing it from north to south. On each side live 5 baboons (a type of ape), the northern baboons and the southern baboons. Throughout the day, the baboons do the same thing 3 times, cross to the other side, go down and go back up for a walk, the ones from the north cross in a southern direction and those from the south cross in a northern direction. When a baboon starts to cross, it will surely reach the other side, that is, it will not turn back. There are two issues to consider, one, that the rope cannot support the weight of more than 3 baboons at once and two, that when one baboon crosses the rope, it cannot find another in the opposite direction. There are baboons that are faster than others and therefore can overtake them, even on the rope, this is no problem. There is also no problem if the northern or southern baboons find others in the opposite direction outside the rope. In Fig.1 you can see the walk of the northern baboons, one baboon waits, 3 are on the crossing rope and another turns around to start again.
+
+
+<img width="378" alt="Captura de pantalla 2023-11-20 a las 11 19 34" src="https://github.com/maribel95/Concurrent-programming/assets/61268027/3189c0c7-3a36-4d9d-af2c-4bff319a60d1">
 
 
 

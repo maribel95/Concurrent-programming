@@ -27,7 +27,9 @@ The problem has been solved in stages:
 
 A simulation example could be this:
 
-´´´ java
+<pre>
+<code>
+  
 MILERDA arrive at the office.
 MILERDA is working.
 NEREPINGU arrive at the office.
@@ -130,8 +132,8 @@ FRANCIS gets out of bathroom.
 *** Bathroom is empty ***
 BUILD SUCCESSFUL (total time: 0 seconds)
 
-
-´´´
+</pre>
+</code>
 
 
 

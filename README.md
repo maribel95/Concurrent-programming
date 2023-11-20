@@ -7,7 +7,15 @@ In this repository you can find three different works that solve different "toy"
 
 Different programming languages have been used, such as Java, Ada and Go.
 
-## P1:
+## P1: The problem of the mixed bathroom with traffic lights.
+
+There are 6 women and 6 men working in a law firm and there is only one mixed bathroom. The director has set some rules for its use:
+• Women and men cannot be in the bathroom at the same time
+• At most there can be 3 women or 3 men at the same time
+• They go to the bathroom twice during the working day
+
+
+
 
 
 

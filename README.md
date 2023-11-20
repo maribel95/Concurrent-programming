@@ -28,110 +28,111 @@ The problem has been solved in stages:
 A simulation example could be this:
 
 <pre>
-<code>
-MILERDA arrive at the office.
-MILERDA is working.
-NEREPINGU arrive at the office.
-NEREPINGU is working.
-ONOFRE arrive at the office.
-ONOFRE is working.
-PUYOLA arrive at the office.
-PUYOLA is working.
-JORDI FERNANDEZ arrive at the office.
-JORDI FERNANDEZ is working.
-GORDO MONSTRUOSO arrive at the office.
-GORDO MONSTRUOSO is working.
-MILERDA enters 1/2. Women at the bathroom: 1
-FABADA arrive at the office.
-FABADA is working.
-NEREPINGU enters 1/2. Women at the bathroom: 2
-MILERDA gets out of bathroom.
-CALAMARDO arrive at the office.
-CALAMARDO is working.
-MARGABRA arrive at the office.
-MARGABRA is working.
-EL MATI arrive at the office.
-EL MATI is working.
-MARGA arrive at the office.
-MARGA is working.
-FRANCIS arrive at the office.
-FRANCIS is working.
-MILERDA is working.
-NEREPINGU gets out of bathroom.
-*** Bathroom is empty ***
-ONOFRE enters 1/2. Men at bathroom: 1
-ONOFRE gets out of bathroom.
-*** Bathroom is empty ***
-PUYOLA enters 1/2. Women at the bathroom: 1
-NEREPINGU is working.
-ONOFRE is working.
-PUYOLA gets out of bathroom.
-*** Bathroom is empty ***
-JORDI FERNANDEZ enters 1/2. Men at bathroom: 1
-GORDO MONSTRUOSO enters 1/2. Men at bathroom: 2
-GORDO MONSTRUOSO gets out of bathroom.
-JORDI FERNANDEZ gets out of bathroom.
-*** Bathroom is empty ***
-FABADA enters 1/2. Women at the bathroom: 1
-PUYOLA is working.
-JORDI FERNANDEZ is working.
-GORDO MONSTRUOSO is working.
-FABADA gets out of bathroom.
-*** Bathroom is empty ***
-CALAMARDO enters 1/2. Men at bathroom: 1
-CALAMARDO gets out of bathroom.
-*** Bathroom is empty ***
-MARGABRA enters 1/2. Women at the bathroom: 1
-CALAMARDO is working.
-FABADA is working.
-MARGABRA gets out of bathroom.
-*** Bathroom is empty ***
-EL MATI enters 1/2. Men at bathroom: 1
-EL MATI gets out of bathroom.
-*** Bathroom is empty ***
-MARGA enters 1/2. Women at the bathroom: 1
-MARGA gets out of bathroom.
-*** Bathroom is empty ***
-FRANCIS enters 1/2. Men at bathroom: 1
-MARGABRA is working.
-FRANCIS gets out of bathroom.
-*** Bathroom is empty ***
-MILERDA enters 2/2. Women at the bathroom: 1
-NEREPINGU enters 2/2. Women at the bathroom: 2
-MARGA is working.
-EL MATI is working.
-FRANCIS is working.
-NEREPINGU gets out of bathroom.
-MILERDA gets out of bathroom.
-*** Bathroom is empty ***
-ONOFRE enters 2/2. Men at bathroom: 1
-ONOFRE gets out of bathroom.
-*** Bathroom is empty ***
-PUYOLA enters 2/2. Women at the bathroom: 1
-PUYOLA gets out of bathroom.
-*** Bathroom is empty ***
-JORDI FERNANDEZ enters 2/2. Men at bathroom: 1
-GORDO MONSTRUOSO enters 2/2. Men at bathroom: 2
-CALAMARDO enters 2/2. Men at bathroom: 3
-JORDI FERNANDEZ gets out of bathroom.
-GORDO MONSTRUOSO gets out of bathroom.
-CALAMARDO gets out of bathroom.
-*** Bathroom is empty ***
-FABADA enters 2/2. Women at the bathroom: 1
-MARGABRA enters 2/2. Women at the bathroom: 2
-MARGA enters 2/2. Women at the bathroom: 3
-FABADA gets out of bathroom.
-MARGABRA gets out of bathroom.
-MARGA gets out of bathroom.
-*** Bathroom is empty ***
-EL MATI enters 2/2. Men at bathroom: 1
-FRANCIS enters 2/2. Men at bathroom: 2
-EL MATI gets out of bathroom.
-FRANCIS gets out of bathroom.
-*** Bathroom is empty ***
-BUILD SUCCESSFUL (total time: 0 seconds)
+  <code>
+    MILERDA arrive at the office.
+    MILERDA is working.
+    NEREPINGU arrive at the office.
+    NEREPINGU is working.
+    ONOFRE arrive at the office.
+    ONOFRE is working.
+    PUYOLA arrive at the office.
+    PUYOLA is working.
+    JORDI FERNANDEZ arrive at the office.
+    JORDI FERNANDEZ is working.
+    GORDO MONSTRUOSO arrive at the office.
+    GORDO MONSTRUOSO is working.
+    MILERDA enters 1/2. Women at the bathroom: 1
+    FABADA arrive at the office.
+    FABADA is working.
+    NEREPINGU enters 1/2. Women at the bathroom: 2
+    MILERDA gets out of bathroom.
+    CALAMARDO arrive at the office.
+    CALAMARDO is working.
+    MARGABRA arrive at the office.
+    MARGABRA is working.
+    EL MATI arrive at the office.
+    EL MATI is working.
+    MARGA arrive at the office.
+    MARGA is working.
+    FRANCIS arrive at the office.
+    FRANCIS is working.
+    MILERDA is working.
+    NEREPINGU gets out of bathroom.
+    *** Bathroom is empty ***
+    ONOFRE enters 1/2. Men at bathroom: 1
+    ONOFRE gets out of bathroom.
+    *** Bathroom is empty ***
+    PUYOLA enters 1/2. Women at the bathroom: 1
+    NEREPINGU is working.
+    ONOFRE is working.
+    PUYOLA gets out of bathroom.
+    *** Bathroom is empty ***
+    JORDI FERNANDEZ enters 1/2. Men at bathroom: 1
+    GORDO MONSTRUOSO enters 1/2. Men at bathroom: 2
+    GORDO MONSTRUOSO gets out of bathroom.
+    JORDI FERNANDEZ gets out of bathroom.
+    *** Bathroom is empty ***
+    FABADA enters 1/2. Women at the bathroom: 1
+    PUYOLA is working.
+    JORDI FERNANDEZ is working.
+    GORDO MONSTRUOSO is working.
+    FABADA gets out of bathroom.
+    *** Bathroom is empty ***
+    CALAMARDO enters 1/2. Men at bathroom: 1
+    CALAMARDO gets out of bathroom.
+    *** Bathroom is empty ***
+    MARGABRA enters 1/2. Women at the bathroom: 1
+    CALAMARDO is working.
+    FABADA is working.
+    MARGABRA gets out of bathroom.
+    *** Bathroom is empty ***
+    EL MATI enters 1/2. Men at bathroom: 1
+    EL MATI gets out of bathroom.
+    *** Bathroom is empty ***
+    MARGA enters 1/2. Women at the bathroom: 1
+    MARGA gets out of bathroom.
+    *** Bathroom is empty ***
+    FRANCIS enters 1/2. Men at bathroom: 1
+    MARGABRA is working.
+    FRANCIS gets out of bathroom.
+    *** Bathroom is empty ***
+    MILERDA enters 2/2. Women at the bathroom: 1
+    NEREPINGU enters 2/2. Women at the bathroom: 2
+    MARGA is working.
+    EL MATI is working.
+    FRANCIS is working.
+    NEREPINGU gets out of bathroom.
+    MILERDA gets out of bathroom.
+    *** Bathroom is empty ***
+    ONOFRE enters 2/2. Men at bathroom: 1
+    ONOFRE gets out of bathroom.
+    *** Bathroom is empty ***
+    PUYOLA enters 2/2. Women at the bathroom: 1
+    PUYOLA gets out of bathroom.
+    *** Bathroom is empty ***
+    JORDI FERNANDEZ enters 2/2. Men at bathroom: 1
+    GORDO MONSTRUOSO enters 2/2. Men at bathroom: 2
+    CALAMARDO enters 2/2. Men at bathroom: 3
+    JORDI FERNANDEZ gets out of bathroom.
+    GORDO MONSTRUOSO gets out of bathroom.
+    CALAMARDO gets out of bathroom.
+    *** Bathroom is empty ***
+    FABADA enters 2/2. Women at the bathroom: 1
+    MARGABRA enters 2/2. Women at the bathroom: 2
+    MARGA enters 2/2. Women at the bathroom: 3
+    FABADA gets out of bathroom.
+    MARGABRA gets out of bathroom.
+    MARGA gets out of bathroom.
+    *** Bathroom is empty ***
+    EL MATI enters 2/2. Men at bathroom: 1
+    FRANCIS enters 2/2. Men at bathroom: 2
+    EL MATI gets out of bathroom.
+    FRANCIS gets out of bathroom.
+    *** Bathroom is empty ***
+    BUILD SUCCESSFUL (total time: 0 seconds)
+  </code>
 </pre>
-</code>
+
 
 ## P2: The problem of traveling baboons with protected objects
 
